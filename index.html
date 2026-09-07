@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>work8 html layout</title>
+<style>
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #EFEBF9;
+	font-family: 'Tahoma', sans-serif;
+	color: #33334e;
+}
+
+.container {
+	max-width: 1100px;
+	width: 95%;
+	margin: 25px auto;
+	box-shadow: 0px 10px 30px rgba(138, 43, 226, 0.15);
+	border-radius: 16px;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+
+header {
+	background-image: url(picture/header4.png);
+	background-size: cover;
+	background-position: center;
+	height: 256px;
+}
+
+section {
+	display: flex;
+	min-height: 420px;
+}
+
+nav {
+	background-color: #F3EEFF;
+	flex: 1;
+	padding: 10px 0;
+	border-right: 2px solid #E4D8FF;
+}
+
+nav h2 {
+	color: #5B4198;
+	padding: 15px 20px;
+	font-size: 1.2rem;
+}
+
+
+a:link, a:visited {
+	color: #4A3E6D;
+	text-decoration: none;
+	background-color: #F3EEFF;
+	display: block;
+	width: 100%;
+	padding: 12px 20px;
+	font-weight: bold;
+	border-left: 4px solid transparent;
+	transition: all 0.25s ease;
+}
+
+a:hover {
+	color: #2563EB;             
+	background-color: #E2D9FF;  
+	border-left: 4px solid #2563EB;
+	padding-left: 25px;
+}
+
+a:active {
+	color: #7C3AED;
+}
+
+
+article {
+	background-color: #FFFFFF;
+	flex: 3;
+	padding: 35px;
+	line-height: 1.8;
+}
+
+article h1 {
+	color: #432C7A;
+	margin-bottom: 20px;
+	border-bottom: 3px solid #C4B5FD;
+	padding-bottom: 8px;
+}
+
+article p {
+	color: #4B5563;
+	font-size: 1.05rem;
+}
+
+
+footer {
+	background-color: #312E81;
+	color: #E0E7FF;
+	padding: 20px;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+	<header></header>
+	<section>        <nav>
+            <h2>เรื่อง ของไหล</h2>
+            <ul style="list-style-type:none;">
+                <li><a href="index.html">สถานะของสาร</a></li>
+                <li><a href="page2.html">ความหนาแน่น</a></li>
+                <li><a href="page3.html">ความถ่วงจำเพาะ</a></li>
+                <li><a href="page4.html">ความดัน</a></li>
+                <li><a href="page5.html">ชนิดของความดัน</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>สถานะของสาร</h1>
+            <p>
+                สสารโดยทั่วไปแบ่งออกเป็น 3 สถานะหลัก ได้แก่:<br>
+                <strong>ของแข็ง (Solids):</strong> มีรูปร่างและปริมาตรคงที่ แรงยึดเหนี่ยวระหว่างโมเลกุลสูง โมเลกุลสั่นอยู่กับที่<br>
+                <strong>ของเหลว (Liquids):</strong> มีปริมาตรคงที่ แต่รูปร่างเปลี่ยนแปลงตามภาชนะที่บรรจุ โมเลกุลเคลื่อนที่ได้บ้าง<br>
+                <strong>แก๊ส (Gases):</strong> รูปร่างและปริมาตรไม่แน่นอน เปลี่ยนตามภาชนะที่บรรจุ ฟุ้งกระจายได้ง่าย<br><br>
+                คำว่า <strong>ของไหล (Fluid)</strong> ในทางฟิสิกส์ หมายถึง สารที่สามารถไหลได้เมื่อมีแรงมากระทำ ได้แก่ ของเหลว และ แก๊ส
+            </p>
+        </article>
+    </section>
+    <footer>
+        <p>จัดทำโดยนายณภากร ถินนารัตน์ ชั้น ม.6/1 เลขที่ 5<br>โรงเรียนรัตนราษฎร์บำรุง</p>
+    </footer>
+</div>
+
+</body>
+</html>
